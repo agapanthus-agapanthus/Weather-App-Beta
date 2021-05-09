@@ -72,3 +72,12 @@ footer {
   vertical-align: 15px;
   width: 42.125px;
 }
+
+.units .active {
+  color: black;
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
