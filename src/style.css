@@ -13,21 +13,12 @@ h1 {
   margin-top: 10px;
 }
 
-img {
-  width: 100px;
-  height: 100px;
-}
-
 li {
   list-style: none;
 }
 
 li:first-letter {
   text-transform: capitalize;
-}
-
-humidity-wind {
-  padding-top: 10px;
 }
 
 footer {
@@ -53,6 +44,12 @@ footer {
 .current-day {
   padding: 0;
 }
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
 .daily-temperature {
   color: black;
   display: inline-block;
@@ -84,4 +81,30 @@ footer {
 
 .units .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+.forecast-image {
+  width: 20px;
+  height: 20px;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.weather-forecast-temperature-max {
+  font-size: 14px;
+  display: inline;
+}
+
+.weather-forecast-temperature-min {
+  font-size: 14px;
+  display: inline;
+  opacity: 0.5;
 }
