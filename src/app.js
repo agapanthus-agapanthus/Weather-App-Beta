@@ -36,6 +36,7 @@ function displayTemperature(response) {
   let windSpeedElement = document.querySelector("#windSpeed");
   let dateElement = document.querySelector("#date");
   let weatherIconElement = document.querySelector("#weatherIcon");
+  let feelsLikeElement = document.querySelector("#feelsLike");
 
   celciusTemperature = response.data.main.temp;
 
@@ -50,6 +51,7 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   weatherIconElement.setAttribute("alt", response.data.weather[0].description);
+  feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like);
   getForecast(response.data.coord);
 }
 
